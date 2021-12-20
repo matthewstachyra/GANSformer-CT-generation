@@ -5,6 +5,8 @@ Overview
 - Target metrics were an FID <100 and fooling a well known medical imaging classifer (MONAI).
 - First trained on a larger set of lung CTs, then transfered to be fine tuned for a smaller set of brain CTs.
 - Brain CTs generated were of high quality. Final FID scores <40 and MONAI classifier had AUC of 0.54 and 0.48/0.52 precision in binary classification task.
+
+Tools, datasets
 - GANSformer (2021): https://github.com/dorarad/gansformer 
 - MONAI: https://github.com/Project-MONAI
 - Lung CTs dataset: COVIDx CT-2 (https://www.kaggle.com/hgunraj/covidxct)
