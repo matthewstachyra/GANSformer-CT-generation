@@ -13,11 +13,11 @@ Tools, datasets
 - Brain CTs dataset: Qure.AI CQ500 (http://headctstudy.qure.ai/dataset)
 
 Problem Statement
-- Machine learning models augment professional opininon for diagnostics and prognostics. However, they require a large number of images to be trained and often there are not often or not often high quality or not often correct modality images. Device makers and hospitals generally don’t open up their data to the general research community. There are frequently complex privacy laws to navigate, and device makers don’t find it beneficial to share things that might give away their competitive advantage. 
+- Machine learning models augment professional opininon for diagnostics and prognostics. However, they require a large number of images to be trained and often there are can be too few, or not high quality enough, or not correct modality images. Device makers and hospitals generally don’t open up their data to the general research community. There are frequently complex privacy laws to navigate, and device makers don’t find it beneficial to share things that might give away their competitive advantage. 
 
 Contributions
 - Testing GANsformer with medical images. (To our knowledge, GANsformer hasn’t been applied/tested with medical images, in part due to how new it is. With more work like this, the field learns where GANsformer performs particularly well versus other methods and its use can propagate there.)
-- (Successfully) generating plausible CT scans using GAN to expand existing limited datasets. 
+- (Successfully) generating plausible CT scans using GAN to expand existing limited datasets. (Plausability defined as possible use to train models. Plausibility tested using FID and MONAI classifier, below).
 - Trying new analysis technique for assessing performance of GAN. (We tried to use an existing medical image classifier to see how will it does at detecting the generated images. As we expected, for the GANsformer, the classifier performed no better than chance.)
 
 Future work
