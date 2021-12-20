@@ -1,0 +1,11 @@
+numpy
+Pillow
+opencv-python
+lmdb
+h5py
+requests
+gdown
+easydict
+tqdm
+termcolor
+seaborn
